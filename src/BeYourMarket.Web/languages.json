@@ -1,1 +1,17 @@
-{"DefaultCulture":"en","Languages":[{"Culture":"en","Enabled":true},{"Culture":"da","Enabled":false}]}
+{
+  "DefaultCulture": "it",
+  "Languages": [
+    //{
+    //  "Culture": "da",
+    //  "Enabled": true
+    //},
+    {
+      "Culture": "en",
+      "Enabled": true
+    },
+    {
+      "Culture": "it",
+      "Enabled": true
+    }
+  ]
+}

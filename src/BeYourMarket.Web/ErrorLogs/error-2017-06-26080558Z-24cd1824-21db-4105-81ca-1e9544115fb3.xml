@@ -1,0 +1,200 @@
+﻿<error errorId="24cd1824-21db-4105-81ca-1e9544115fb3" host="PC-MAXI" type="System.ArgumentNullException" message="Value cannot be null.&#xD;&#xA;Parameter name: value" source="System.Runtime.Caching" detail="Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = &quot;BeYourMarket.Service.DataCacheService&quot;, name = &quot;(none)&quot;.&#xD;&#xA;Exception occurred while: Calling constructor BeYourMarket.Service.DataCacheService(Microsoft.Practices.Unity.IUnityContainer container).&#xD;&#xA;Exception is: ArgumentNullException - Value cannot be null.&#xD;&#xA;Parameter name: value&#xD;&#xA;-----------------------------------------------&#xD;&#xA;At the time of the exception, the container was:&#xD;&#xA;&#xD;&#xA;  Resolving BeYourMarket.Service.DataCacheService,(none)&#xD;&#xA;  Calling constructor BeYourMarket.Service.DataCacheService(Microsoft.Practices.Unity.IUnityContainer container)&#xD;&#xA; ---&gt; System.ArgumentNullException: Value cannot be null.&#xD;&#xA;Parameter name: value&#xD;&#xA;   at System.Runtime.Caching.MemoryCacheEntry..ctor(String key, Object value, DateTimeOffset absExp, TimeSpan slidingExp, CacheItemPriority priority, Collection`1 dependencies, CacheEntryRemovedCallback removedCallback, MemoryCache cache)&#xD;&#xA;   at System.Runtime.Caching.MemoryCache.Set(String key, Object value, CacheItemPolicy policy, String regionName)&#xD;&#xA;   at BeYourMarket.Service.DataCacheService.UpdateCache(CacheKeys CacheKeyName, Object CacheItem, Int32 priority)&#xD;&#xA;   at BeYourMarket.Service.DataCacheService.GetCachedItem(CacheKeys CacheKeyName)&#xD;&#xA;   at BeYourMarket.Service.DataCacheService..ctor(IUnityContainer container)&#xD;&#xA;   at lambda_method(Closure , IBuilderContext )&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.&lt;&gt;c__DisplayClass1.&lt;GetBuildMethod&gt;b__0(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainer.Resolve(Type t, String name, ResolverOverride[] resolverOverrides)&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)&#xD;&#xA;   at BeYourMarket.Service.CacheHelper.get_Settings()&#xD;&#xA;   at BeYourMarket.Web.MvcApplication.Application_BeginRequest(Object sender, EventArgs e) in C:\Repos\beyourmarket\src\BeYourMarket.Web\Global.asax.cs:line 111&#xD;&#xA;   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2017-06-26T08:05:58.4926757Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;HTTP_COOKIE:Abp.Localization.CultureName=en; __RequestVerificationToken=7iTl_ODszCQAI3-fE7nCOWaMC8WjLP10M13ACWGYgSzJoT0d72fbbvXU2GfzvJaCB4VadjRhJQM3tJ_qGTKEloXjO7Zzz0-1hpaO_s3Ujxw1; .AspNet.ApplicationCookie=ae-TEwj7FFOwgz8wHYn9YBjwuOAPUNGt_g6NtcRs2lRPVSkdWJQfhzTPTi7GCcfnkUyiZIizI1pVkqNqGBRzRl2bUpJkyjY8n1hLRYkcxkUuFq_dYQ4C5pVLVcMIzGhrM4OgulTkQphqP7GLgme9GhigM1CRFfi4XIWM31FQZfkUKwm2_qgXgjJdgjjalAhDCU8v89igSeTcTZDjxYzuZ2z5en0o8vCRLzNJvwOH4OubryPRpABf6Ny049eAvv8IYD0kYnm02PN5Y1ckAy5vSfyiUkYVYxgxdpi54x4FdbF2QSiMOsIHoK1Dty137AuNvEX26ERrhEvNh6Utv0M2a12F5ww9n7jOtV_54gH28jEzMOnDEEd1iwqv67Y78w_IQLNjh5_cdEHYc7EKA_E7CSq9bUlUrdChTf30quWFywqweXq0TtGTq1tCNPZ2cI19yqTHeRTliGOtrFYH0mJPJYJFkvE1yitrkooC0oyBEYO4sNI8219N9NUZs-4UEFnJrXtjNx3Ae-g9k5C5tZ7lntPPVeMMG1_DUYJoYHPRU1Y; i18n.langtag=en&#xD;&#xA;HTTP_HOST:localhost:53203&#xD;&#xA;HTTP_REFERER:http://localhost:53203/en/install&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;Cookie: Abp.Localization.CultureName=en; __RequestVerificationToken=7iTl_ODszCQAI3-fE7nCOWaMC8WjLP10M13ACWGYgSzJoT0d72fbbvXU2GfzvJaCB4VadjRhJQM3tJ_qGTKEloXjO7Zzz0-1hpaO_s3Ujxw1; .AspNet.ApplicationCookie=ae-TEwj7FFOwgz8wHYn9YBjwuOAPUNGt_g6NtcRs2lRPVSkdWJQfhzTPTi7GCcfnkUyiZIizI1pVkqNqGBRzRl2bUpJkyjY8n1hLRYkcxkUuFq_dYQ4C5pVLVcMIzGhrM4OgulTkQphqP7GLgme9GhigM1CRFfi4XIWM31FQZfkUKwm2_qgXgjJdgjjalAhDCU8v89igSeTcTZDjxYzuZ2z5en0o8vCRLzNJvwOH4OubryPRpABf6Ny049eAvv8IYD0kYnm02PN5Y1ckAy5vSfyiUkYVYxgxdpi54x4FdbF2QSiMOsIHoK1Dty137AuNvEX26ERrhEvNh6Utv0M2a12F5ww9n7jOtV_54gH28jEzMOnDEEd1iwqv67Y78w_IQLNjh5_cdEHYc7EKA_E7CSq9bUlUrdChTf30quWFywqweXq0TtGTq1tCNPZ2cI19yqTHeRTliGOtrFYH0mJPJYJFkvE1yitrkooC0oyBEYO4sNI8219N9NUZs-4UEFnJrXtjNx3Ae-g9k5C5tZ7lntPPVeMMG1_DUYJoYHPRU1Y; i18n.langtag=en&#xD;&#xA;Host: localhost:53203&#xD;&#xA;Referer: http://localhost:53203/en/install&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Repos\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/admin/install/install" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Repos\beyourmarket\src\BeYourMarket.Web\admin\install\install" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="Email=massimiliano.pizzolato94%40gmail.com&amp;Password=Skibadia1&amp;Server=.%5CSQLEXPRESS&amp;Database=eproc&amp;UseWindowsAuthentication=True&amp;DatabaseType=1&amp;InstallSampleData=True" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="56271" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/admin/install/install" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="53203" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/admin/install/install" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="Abp.Localization.CultureName=en; __RequestVerificationToken=7iTl_ODszCQAI3-fE7nCOWaMC8WjLP10M13ACWGYgSzJoT0d72fbbvXU2GfzvJaCB4VadjRhJQM3tJ_qGTKEloXjO7Zzz0-1hpaO_s3Ujxw1; .AspNet.ApplicationCookie=ae-TEwj7FFOwgz8wHYn9YBjwuOAPUNGt_g6NtcRs2lRPVSkdWJQfhzTPTi7GCcfnkUyiZIizI1pVkqNqGBRzRl2bUpJkyjY8n1hLRYkcxkUuFq_dYQ4C5pVLVcMIzGhrM4OgulTkQphqP7GLgme9GhigM1CRFfi4XIWM31FQZfkUKwm2_qgXgjJdgjjalAhDCU8v89igSeTcTZDjxYzuZ2z5en0o8vCRLzNJvwOH4OubryPRpABf6Ny049eAvv8IYD0kYnm02PN5Y1ckAy5vSfyiUkYVYxgxdpi54x4FdbF2QSiMOsIHoK1Dty137AuNvEX26ERrhEvNh6Utv0M2a12F5ww9n7jOtV_54gH28jEzMOnDEEd1iwqv67Y78w_IQLNjh5_cdEHYc7EKA_E7CSq9bUlUrdChTf30quWFywqweXq0TtGTq1tCNPZ2cI19yqTHeRTliGOtrFYH0mJPJYJFkvE1yitrkooC0oyBEYO4sNI8219N9NUZs-4UEFnJrXtjNx3Ae-g9k5C5tZ7lntPPVeMMG1_DUYJoYHPRU1Y; i18n.langtag=en" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:53203" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:53203/en/install" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="Email">
+      <value string="massimiliano.pizzolato94@gmail.com" />
+    </item>
+    <item name="Password">
+      <value string="Skibadia1" />
+    </item>
+    <item name="Server">
+      <value string=".\SQLEXPRESS" />
+    </item>
+    <item name="Database">
+      <value string="eproc" />
+    </item>
+    <item name="UseWindowsAuthentication">
+      <value string="True" />
+    </item>
+    <item name="DatabaseType">
+      <value string="1" />
+    </item>
+    <item name="InstallSampleData">
+      <value string="True" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="Abp.Localization.CultureName">
+      <value string="en" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="7iTl_ODszCQAI3-fE7nCOWaMC8WjLP10M13ACWGYgSzJoT0d72fbbvXU2GfzvJaCB4VadjRhJQM3tJ_qGTKEloXjO7Zzz0-1hpaO_s3Ujxw1" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="ae-TEwj7FFOwgz8wHYn9YBjwuOAPUNGt_g6NtcRs2lRPVSkdWJQfhzTPTi7GCcfnkUyiZIizI1pVkqNqGBRzRl2bUpJkyjY8n1hLRYkcxkUuFq_dYQ4C5pVLVcMIzGhrM4OgulTkQphqP7GLgme9GhigM1CRFfi4XIWM31FQZfkUKwm2_qgXgjJdgjjalAhDCU8v89igSeTcTZDjxYzuZ2z5en0o8vCRLzNJvwOH4OubryPRpABf6Ny049eAvv8IYD0kYnm02PN5Y1ckAy5vSfyiUkYVYxgxdpi54x4FdbF2QSiMOsIHoK1Dty137AuNvEX26ERrhEvNh6Utv0M2a12F5ww9n7jOtV_54gH28jEzMOnDEEd1iwqv67Y78w_IQLNjh5_cdEHYc7EKA_E7CSq9bUlUrdChTf30quWFywqweXq0TtGTq1tCNPZ2cI19yqTHeRTliGOtrFYH0mJPJYJFkvE1yitrkooC0oyBEYO4sNI8219N9NUZs-4UEFnJrXtjNx3Ae-g9k5C5tZ7lntPPVeMMG1_DUYJoYHPRU1Y" />
+    </item>
+    <item name="i18n.langtag">
+      <value string="en" />
+    </item>
+  </cookies>
+</error>

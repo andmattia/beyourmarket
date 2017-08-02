@@ -107,7 +107,7 @@ namespace BeYourMarket.Web
                 if (dbContext.Database.Exists())
                 {
                     // Short Date and time pattern
-                    System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo(language);
+                    CultureInfo culture = new CultureInfo(language);
                     culture.DateTimeFormat.ShortDatePattern = CacheHelper.Settings.DateFormat;
                     culture.DateTimeFormat.ShortTimePattern = CacheHelper.Settings.TimeFormat;
                     Thread.CurrentThread.CurrentCulture = culture;

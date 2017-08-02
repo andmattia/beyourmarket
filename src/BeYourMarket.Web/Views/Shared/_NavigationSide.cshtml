@@ -70,9 +70,14 @@
                     <span>[[[Publish new listing]]]</span>
                 </a>
             </li>
-            }
-            else
-            {            
+            <li class="hidden-lg hidden-md">
+                <a href="http://app.cashtrading.it/Account/Login">
+                    <span>Sei un Professionista?</span>
+                </a>
+            </li>
+        }
+        else
+        {
             <li class="">                
                 <a href="@Url.Action("Dashboard", "Manage", new { Area = "" })">
                     <i class="fa fa-dashboard"></i> <span>[[[Dashboard]]]</span>

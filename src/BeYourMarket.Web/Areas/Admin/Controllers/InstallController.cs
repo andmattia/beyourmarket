@@ -82,7 +82,9 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
                 case DatabaseType.MsSqlCeServer:
                 default:
                     string databaseFileName = string.Format("BeYourMarket_{0}.sdf", DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss"));
-                    string databasePath = @"|DataDirectory|\" + databaseFileName;
+                    //string databasePath = @"|DataDirectory|\" + databaseFileName;
+                    string databasePath = @"C:\Repos\beyourmarket\" + databaseFileName;
+                    
                     connectionString = "Data Source=" + databasePath + ";Persist Security Info=False";
 
                     connectionStringSettings = new ConnectionStringSettings("DefaultConnection", connectionString, "System.Data.SqlServerCe.4.0");
